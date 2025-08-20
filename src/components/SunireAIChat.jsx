@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ChatBotHead from "./ChatBotHead";
 import ChatBotBody from "./ChatBotBody";
 import ChatBotFooter from "./ChatbotFooter";
-import styles from "../styles/sunnireaichat.module.css";
+import styles from "../styles/sunireaichat.module.css";
 
 function SunireAIChat() 
 {
