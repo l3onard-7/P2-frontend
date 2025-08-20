@@ -1,0 +1,1387 @@
+[
+  {
+    "question": "After being diagnosed with Melanoma from biopsy, how wide and deep with the WLE (Wide Local Excision) be?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "For melanomas with a depth of 1 mm or less, 1-cm margins are indicated. For melanomas with a depth 1.01 to 2.0 cm, a margin of either 1 cm or 2 cm is acceptable. For melanomas with a depth of more than 2.0 cm, a margin of 2 cm is indicated."
+  },
+  {
+    "question": "After being diagnosed with SCC and BCC from biopsy, how wide and deep with the WLE (Wide Local Excision) be?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't know the typical dimensions of a Wide Local Excision (WLE) for Squamous Cell Carcinoma (SCC) and Basal Cell Carcinoma (BCC) after a biopsy diagnosis."
+  },
+  {
+    "question": "What is the chances of reoccurring Melanoma after being diagnosed?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "The chances of reoccurring Melanoma after being diagnosed vary depending on factors such as the stage of disease, risk for recurrence, and risk of new primary melanoma. According to the American Academy of Dermatology, the frequency and intensity of cutaneous melanoma follow-up, including surveillance imaging, depends on these factors. The risk of recurrence can be reduced with regular follow-up and surveillance exams."
+  },
+  {
+    "question": "What is the chances of reoccurring SCC and BCC after being diagnosed?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Once you have had a skin cancer, you have a higher risk of developing it again in the same area, and you are also more at risk of developing another one somewhere else on your skin. The risk of recurrence depends on the location and clinical and histopathological features of the skin cancer. However, the exact chances of reoccurring SCC and BCC are not specified in the provided context."
+  },
+  {
+    "question": "What are the odds of dying from SCC ?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Basal and squamous cell skin cancer (SCC) is relatively rare and not typically a major cause of mortality. According to the American Cancer Society, the 5-year survival rate for both basal and squamous cell skin cancers is around 99%. This suggests that death from SCC is unlikely."
+  },
+  {
+    "question": "What happens if you do not remove SCC?  How quickly should it be removed?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't have any information about the impact of leaving SCC on a project or the time it takes to remove it."
+  },
+  {
+    "question": "How long do I stay in hospital after a biopsy?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't have enough information to determine the typical length of hospital stay after a biopsy. The provided context does not contain any relevant information. I would recommend consulting a medical professional for an accurate answer."
+  },
+  {
+    "question": "What is the youngest age someone died from Melanoma?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "I don't have enough information to determine the minimum age at which someone has died from melanoma."
+  },
+  {
+    "question": "What age does it affect the most?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "According to the provided context, basal cell carcinoma (BCC) affects people in the age range of 68.9 years, while squamous cell carcinoma (SCC) affects people in the age range of 75.6 years. The majority of deaths from BCC occur in people over 65 years, with 58.3% of cases being above 65 years, and for SCC, the majority of deaths occur in people over 65 years as well, with 78.3% of cases being above 65 years."
+  },
+  {
+    "question": "How fast does melanoma grow?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkhMuu-57nCBj-93ea93d62d88f0e9', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "How to tell if melanoma has spread to lymph nodes?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "To tell if melanoma has spread to lymph nodes, a physical exam, imaging tests, or a sentinel lymph node biopsy may be used to check for signs of cancer in the lymph nodes. The pathologist will look for signs such as matted lymph nodes or satellite tumors. A sentinel lymph node biopsy is a procedure where the first lymph node to which cancer cells are likely to spread is removed and checked for cancer."
+  },
+  {
+    "question": "What happens if melanoma has spread to lymph nodes?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "If melanoma has spread to lymph nodes, it has a slightly better prognosis, with 8.5% of cases diagnosed at this stage. However, melanoma cells that pass through the lymphatic system before entering the bloodstream are more likely to spread and form new tumors. This can ultimately lead to metastatic melanoma, which is still considered melanoma."
+  },
+  {
+    "question": "What happens if you test positive for melanoma?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "If you test positive for melanoma, you may undergo a biopsy, which can cause scarring. However, it's unclear what happens after a positive test, as the provided context only mentions potential risks and complications. The context does not provide information on the next steps after a positive test result."
+  },
+  {
+    "question": "What is the 7 point check list for melanoma?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "The 7-point checklist for melanoma includes major features (scoring 2 points each) such as change in size, irregular shape, and irregular colour, and minor features (scoring 1 point each) such as largest diameter 7 mm or more, inflammation, oozing, and change in sensation. The checklist is also known as the Weighted Glasgow 7-point checklist. A score of 3 or more requires referral for further investigation."
+  },
+  {
+    "question": "Is stage 1 melanoma curable?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "With appropriate treatment, Stage 1 Melanoma is highly curable. There is a low risk for recurrence or metastasis. The 5-year survival rate is 98.4%."
+  },
+  {
+    "question": "Can my GP do a skin biopsy?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Yes, your doctor can perform a skin test or examination to diagnose a skin issue. A skin examination involves a visual inspection of the skin to identify any suspicious moles or growths. A skin test, such as a skin biopsy, may also be performed to collect a sample of skin tissue for further examination."
+  },
+  {
+    "question": "How much is a dermatologist visit in Ireland? ( UK and Northern Ire)",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "In Ireland, a dermatologist visit can cost between €300 to €600. In the UK and Northern Ireland, a private dermatology appointment typically ranges from £240 to £500. Some clinics in the UK offer consultations for around £300-£400."
+  },
+  {
+    "question": "What type of melanoma has the poorest prognosis?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Nodular melanoma has the poorest prognosis among melanoma subtypes. It grows downwards into deeper layers of the skin and often appears as a raised nodule. Mucosal melanoma also has a poorer prognosis than cutaneous melanoma."
+  },
+  {
+    "question": "What is Mucosal melanoma?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Mucosal melanoma is a type of melanoma that occurs on the mucous membranes of the body. It has a poorer prognosis than cutaneous melanoma. The exact characteristics of mucosal melanoma are not specified in the given context."
+  },
+  {
+    "question": "Can a dermatologist tell if a mole is cancerous just by looking at it?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "While the context provided is about visual inspection for diagnosing cutaneous melanoma, it doesn't explicitly state that a dermatologist can diagnose skin cancer from a single visual examination. However, it implies that visual inspection is a part of the diagnostic process."
+  },
+  {
+    "question": "How long is the waiting list to see a dermatologist for a skin cancer in Ireland (UK and Northern Ire)?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkjY1c-57nCBj-93ea9e328a231b96', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "How deep do they cut for melanoma, bcc and scc?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "For melanoma, the depth of cut depends on the tumor's depth, ranging from 1-cm margins for depths of 1 mm or less, to 2-cm margins for depths over 2 cm. For Basal Cell Carcinoma (BCC), the depth of cut is not specified in the provided context. For Squamous Cell Carcinoma (SCC), the depth of cut is also not specified in the provided context."
+  },
+  {
+    "question": "What is the most common age for skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "The most common age for skin cancers is over 50. However, it can also occur in younger people who have had extensive sun exposure. This age group is particularly susceptible due to prolonged exposure to sunlight or other ultraviolet radiation."
+  },
+  {
+    "question": "What is the best way to prevent skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "The best way to prevent skin cancers is to make sun protection a part of your life by following the \"Slip, Slop, Slap, Seek, and Slide\" steps. These steps include wearing sun-protective clothing, applying sunscreen with SPF 30+ or higher, wearing a hat, seeking shade, and wearing sunglasses. By following these steps, you can help prevent further damage to your skin and reduce the risk of skin cancer."
+  },
+  {
+    "question": "How do I know which sun block to use?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "For sun protection, the Skin Cancer Foundation recommends using a water-resistant, broad-spectrum sunscreen with an SPF of 30 or higher for any extended outdoor activity. This type of sunscreen provides adequate protection for most skin types and activities. It's also essential to consider other forms of sun protection, such as eye protection and clothing."
+  },
+  {
+    "question": "After being diagnosed with skin cancer, do I need to use UV protection? How long.",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "If you're diagnosed with skin cancer, it's essential to use UV protection to prevent further damage. You should reapply sunscreen every two hours. This is recommended regardless of your skin cancer diagnosis."
+  },
+  {
+    "question": "How much SPF do I need to apply on various parts of my body?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "For various parts of the body, it's recommended to apply sunscreen to all exposed areas, including ears, neck, hands, and feet. The amount needed is 30-40ml for adults and 10-30ml for children, depending on age. Reapply every two hours, especially when exercising, to maintain effective protection."
+  },
+  {
+    "question": "Does all day sun protection actually work – is it safe?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "All-day sun protection measures, such as using broad-spectrum sunscreens with an SPF of 15 or higher, can effectively reduce the risk of sunburn and photoaging. Regular use of sunscreens has also been associated with a reduced risk of some skin cancers. However, the long-term safety of organic sunscreens is unclear due to systemic absorption."
+  },
+  {
+    "question": "Which chemicals in sun cream is bad for you?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "The chemicals in sun cream that are bad for you are oxybenzone, avobenzone, octocrylene, and ecamsule, which have been shown to be absorbed into the body and may have potential health sequelae. Additionally, oxybenzone and octinoxate can cause coral reef bleaching, and nanoparticles of zinc oxide and titanium dioxide may also have detrimental effects on the environment. Some studies also suggest that these chemicals may have adverse reproductive effects on fish species."
+  },
+  {
+    "question": "Which is better SPF or UPF ( suncream or clothing)",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "The most effective way to protect against the sun's harmful rays is to use a combination of methods, including seeking shade, wearing protective clothing, and using a broad-spectrum sunscreen with a Sun Protection Factor (SPF) of 30 or higher. You should also wear a hat with a wide brim and seek shade, especially during peak sun hours."
+  },
+  {
+    "question": "Where can I find a dermatologist (Dublin, Leinster, Munster, Ulster, Connacht and UK)",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "I don't have specific information on where to find a dermatologist in Dublin, Leinster, Munster, Ulster, Connacht, or the UK, but you can try searching online for private dermatologists in these areas. You can also check with local hospitals or medical clinics for a referral. Prices for consultations are mentioned in the context, but not specific locations."
+  },
+  {
+    "question": "Where are the most common parts of the body to get skin cancer.",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "The most common parts of the body to get skin cancer are areas that are often exposed to sunlight, such as the face, neck, and hands. The scalp, lips, and ears are also common locations for skin cancer. Additionally, skin cancer can occur on areas that typically don't get sun, such as the palms of the hands, genitals, and under the fingernails and toenails."
+  },
+  {
+    "question": "What occupations are most at risk to develop skin cancer?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "The context does not directly mention jobs that increase skin cancer risk, but it does mention that \"too much sun causes skin damage,\" which implies that prolonged exposure to the sun can increase the risk of skin cancer."
+  },
+  {
+    "question": "How to protect infants from skin cancer?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "To protect infants from skin cancer, keep them in the shade and cover them with clothes. Use a small amount of children's sunscreen on uncovered areas, reapplying every two hours. Choose a sunscreen specifically designed for babies."
+  },
+  {
+    "question": "What happens if BCC biopsy comes back positive? – same for melanoma an SCC",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "If a BCC biopsy comes back positive, it means cancerous cells are present, confirming a diagnosis of BCC. The next step is to discuss treatment options with a doctor, typically involving removing the tumor and surrounding tissue. This is done to prevent recurrence of the cancer."
+  },
+  {
+    "question": "If I have skin cancer, are my children more likely to get it ?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "There is no direct information in the provided context about a genetic link between having skin cancer and having children with skin cancer. However, it is mentioned that melanoma skin cancers are linked to gene changes."
+  },
+  {
+    "question": "Is there a testing gene for skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "There is a testing gene for skin cancers, specifically the CDKN2A gene, also known as p16, which accounts for up to 40 percent of hereditary skin cancer cases. Genetic testing for this gene is recommended for individuals with multiple skin cancers or family members with skin cancer or pancreatic cancer."
+  },
+  {
+    "question": "Will a biopsy tell at what stage the melanoma is ? same for BCC and SCC",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "The type of skin cancer in question is squamous cell carcinoma. A biopsy is not very accurate in determining the stage of squamous cell carcinoma, as high-risk features can remain undetected in 83.3% of cases, and the actual TNM stage is not identified in 1 out of 6 tumors."
+  },
+  {
+    "question": "What is a concerning size for melanoma ?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "A concerning size for melanoma is a diameter greater than 7mm. This is mentioned in the context as a characteristic to look out for. It suggests that lesions larger than 7mm may be a potential indicator of melanoma."
+  },
+  {
+    "question": "Will I be put asleep for melanoma surgery?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "It's not explicitly stated in the provided context whether you will be put asleep for melanoma surgery. However, the context does mention that surgery is the main treatment for melanoma, but the specifics of the surgery are not mentioned. It's likely that general anesthesia or sedation may be used, but this is not confirmed in the given context."
+  },
+  {
+    "question": "How deep do they cut for SCC?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "They cut at least 4 mm for SCC. A 2-4 mm punch biopsy is only useful for tumours less than 3 mm thick. For thicker tumours, a larger incision biopsy is recommended."
+  },
+  {
+    "question": "What stage will I need chemo for skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Systemic chemotherapy is used to treat basal and squamous cell skin cancer that has spread to lymph nodes. However, the context does not specify how often chemotherapy is used to treat skin cancer. It only provides information about the treatment option."
+  },
+  {
+    "question": "What is topical chemotherapy for skin cancer?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Topical chemotherapy for skin cancer is a treatment that applies medication directly to the skin to kill cancer cells. Efudix is an example of a topical chemotherapy cream used to treat Actinic Keratosis and Squamous Cell Carcinoma in situ. It works by stopping the enzyme thymidylate synthetase, which is necessary for DNA production."
+  },
+  {
+    "question": "Why is Efidix so painful on my face?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Efidix, also known as Efudix, can cause redness and soreness on the face as a sign that the treatment is working. This is because the abnormal cells are dying, which can be an uncomfortable process. If the reaction becomes too uncomfortable, it's recommended to stop the treatment and consult a GP."
+  },
+  {
+    "question": "How long do I need to use Efudix on my face?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Treatment with Efudix should be continued for at least 3 to 6 weeks, and may be required for as long as 10 to 12 weeks. The exact duration may vary depending on the patient's response. It's recommended to follow the patient for a reasonable period to determine if a cure has been obtained."
+  },
+  {
+    "question": "Does Efudix actually work?  How does Efudix deal with skin cancer?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Efudix appears to be effective in treating Actinic Keratosis and Squamous Cell Carcinoma in situ. It works by inhibiting the enzyme thymidylate synthetase, which prevents DNA production. This ultimately helps to control the growth of cancer cells."
+  },
+  {
+    "question": "What are the side affects of Efudix?  How often can I use Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't have enough information to provide the common side effects and dosage frequency of Efudix. The provided context does not contain relevant information. I recommend consulting a medical professional or a reliable healthcare source for accurate information."
+  },
+  {
+    "question": "Can I wash while using Efudix?  How do I shower while using Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Unfortunately, the provided context does not mention any information about using Efudix eye drops or bathing/showering while using the product. It appears to be related to Efudix cream and skin cancer treatment. I don't know if it's safe to shower or bathe while using Efudix eye drops."
+  },
+  {
+    "question": "How long does it take my skin to go back to normal after Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "After stopping Efudix treatment, it generally takes a few weeks for the skin to settle down to normal. This timeframe may vary, but it is typically a few weeks. Complete healing of the lesions may not be evident for 1 to 2 months following cessation of Efudix therapy."
+  },
+  {
+    "question": "Why is my skin looking like open wounds while using Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Efudix can cause skin reactions such as redness, swelling, and blistering. These reactions are typically mild to moderate in severity. They usually resolve on their own once treatment is stopped."
+  },
+  {
+    "question": "What can I put on my skin for relief while using Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "While using Efudix, you can put on disposable nitrile gloves to protect your skin and prevent the cream from getting too close to your eyes or other sensitive body parts."
+  },
+  {
+    "question": "Why is the Efudix making my wounds crust?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "I don't have enough information to determine what is causing crust formation on wounds treated with Efudix. However, I do know that Efudix is another name for Fluorouracil (5-FU), a topical antimetabolite used to treat skin conditions such as actinic keratoses and cutaneous carcinomas."
+  },
+  {
+    "question": "While using Efudix, should my skin be bleeding?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "I don't have information about Efudix, but I have information about a similar chemotherapy drug called Fluorouracil (5FU). Bleeding is a possible side effect of Fluorouracil (5FU). Efudix is likely a different name for Fluorouracil (5FU) or a similar chemotherapy drug."
+  },
+  {
+    "question": "Does Efudix always work and will I still need surgery afterwards?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "When treated with Efudix, the chances of success are generally high, with basal cell carcinoma being highly curable when detected and treated early. However, surgery may still be necessary after treatment, especially if the cancer is large or has grown deep into the skin. The need for surgery depends on the individual case and the extent of the cancer."
+  },
+  {
+    "question": "Do I need to protect from UV rays while using Efudix and how or what?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "I don't have specific information on protecting from UV rays while using Efudix. However, given that Efudix is used to treat skin conditions caused by solar keratosis, it's likely that patients should continue to protect their skin from UV rays. Consult a doctor for specific advice on how to protect your skin while using Efudix."
+  },
+  {
+    "question": "Will I feel sick while using Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "It's unlikely that you will feel sick while using Efudix, but some common side effects include emotional upset, insomnia, and skin reactions. However, severe reactions are rare and typically occur in patients with DPD enzyme deficiency."
+  },
+  {
+    "question": "Will I be left with scars after using Efudix.",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Using Efudix may cause scarring, but it's uncommon. In some cases, the inflammation caused by Efudix can lead to permanent and distressing changes in the skin, such as increased blood vessel size. However, the document does not provide specific information on scarring after treatment with Efudix."
+  },
+  {
+    "question": "Do I put bandages on where my skin is open from Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't have enough information to provide wound care recommendations for skin exposed to Efudix. Efudix is a brand name for a topical medication, but without more context, I can't determine its specific formulation or intended use. It's best to consult a medical professional for personalized advice on wound care."
+  },
+  {
+    "question": "Do UV rays work against Efudix treatment.",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Efudix, which contains fluorouracil, is used to treat non-melanoma skin cancer. It works by interfering with DNA synthesis, which is necessary for cancer cell growth. However, I don't know if it is specifically effective against UV rays."
+  },
+  {
+    "question": "What is the alternative treatment to Efudix?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't have enough information to suggest an alternative medication to Efudix. The provided context indicates that no relevant information was found online. Without more details, I'm unable to provide a different medication."
+  },
+  {
+    "question": "What are the stages of the UV index and how much sun protection do I need for each?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "The UV index has four stages: Low (1-2), Moderate to High (3-7), Very High to Extreme (8+), and each stage requires increasing levels of sun protection. For Low (1-2), no protection is needed, for Moderate to High (3-7), protection is needed, and for Very High to Extreme (8+), extra protection is needed."
+  },
+  {
+    "question": "I do not understand the different factors, what does SPF 20 do? 10,15,30,50 etc  …… explain how it works.",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't know the difference between SPF values and how they protect against UV rays."
+  },
+  {
+    "question": "Do I still need to apply suncream if my moisturiser has SPF?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "It is sufficient to use a moisturiser with SPF instead of applying separate suncream, as long as the SPF is at least 30 and you apply enough and reapply throughout the day. Dermatologists recommend this option for most patients. This can provide adequate protection against the sun's harmful rays."
+  },
+  {
+    "question": "What is Dab and Tram treatment for skin cancer – how does it work, what are the side affects, why will I need it?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't know."
+  },
+  {
+    "question": "Will Pembro treatment work for skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Pembrolizumab (Pembro) treatment is used to treat squamous cell carcinoma of the skin that is locally advanced or has spread to other parts of the body. It works by blocking the binding of PD-L1 to PD-1, allowing T cells to kill tumor cells. This is an example of immunotherapy using immune checkpoint inhibitors."
+  },
+  {
+    "question": "How do I know if BCC is related to sun exposure?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "BCC is likely related to sun exposure if it appears on sun-exposed areas and you have a history of UV exposure, sunburns, or fair skin. A dermatologist can confirm the link. This is particularly true for areas like the face, neck, and arms."
+  },
+  {
+    "question": "After having a WLE (Wide Local Excision) done, I am very tired and exhausted, is this normal? How long does it last?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "After having a WLE (Wide Local Excision), it's normal to feel tired and exhausted due to the surgical procedure and potential anaesthetic effects. This fatigue usually lasts for a short period, typically a few days to a week, as your body recovers from the surgery. However, the exact duration may vary depending on individual factors."
+  },
+  {
+    "question": "Will a full body PET Scan show up all skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Unfortunately, the provided context does not mention the specific types of skin cancers that can be detected by a full-body PET scan."
+  },
+  {
+    "question": "What is immunotherapy?  Is it for skin cancer? How does it work?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Immunotherapy is a treatment that uses the patient's immune system to fight cancer. It is used to treat skin cancer, including basal cell carcinoma and squamous cell carcinoma. Immunotherapy works by boosting or directing the body's natural defenses against cancer, such as by blocking proteins that help cancer cells evade the immune system."
+  },
+  {
+    "question": "Does melanoma affect my brain?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Melanoma is not a brain cancer, but it can spread to the brain. The American Academy of Dermatology has information on treatment options when melanoma spreads to the brain. This suggests that melanoma is a skin cancer that can metastasize to the brain."
+  },
+  {
+    "question": "Do I need a scan after WLE for 2A melanoma?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "I don't have enough information to recommend a follow-up scan for someone with stage 2A melanoma after a wide local excision (WLE)."
+  },
+  {
+    "question": "How common is melanoma behind eyes?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkpYiM-57nCBj-93eab6127ae29575', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "How do I  know if I have melanoma behind my eyes, and how is it treated?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "To determine if you have melanoma behind your eyes, look for changes in the skin or eyes, such as an irregular pigmentation or inflammation. If you notice any of these symptoms, consult a doctor for a proper examination and diagnosis. Treatment for melanoma behind the eyes may involve surgery, radiation therapy, or immunotherapy, depending on the stage and severity of the condition."
+  },
+  {
+    "question": "How do I protect eye from melanoma?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkpZjZ-57nCBj-93eab627fef09575', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "What shaped and size glasses are recommended to protect eyes from skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Large-framed and wraparound sunglasses are recommended to protect eyes from skin cancers. They are more likely to protect eyes from light coming in from different angles. Smaller versions of these sunglasses are suitable for children."
+  },
+  {
+    "question": "How do I protect the split in my hair from skin cancer?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "To prevent skin cancer on bald or thinning areas, use a broad-spectrum sunscreen with an SPF of 30 or highter, and apply it daily to the scalp, even on cloudy days. Additionally, consider wearing a hat with a wide brim to protect the scalp from direct sun exposure. You can also cover thinning areas with clothing or a scalp protector."
+  },
+  {
+    "question": "What kind of hats to use for protection against skin cancer and what are the recommendations?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "To protect against skin cancer, use a hat with a tightly woven fabric, preferably a broad-brimmed, legionnaire or bucket-style hat. This type of hat should cover your face, neck, and ears, which are common spots for skin cancers to develop. Avoid using caps, as they do not provide full protection for these areas."
+  },
+  {
+    "question": "What fabric are best to protect against UV rays.",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Dark or bright colors, densely woven cloth, and high-tech fabrics treated with chemical UV absorbers or dyes are best to protect against UV rays. Unbleached cotton, shiny polyesters, and lightweight satiny silks can also be highly protective due to their composition and ability to absorb or reflect radiation. These fabrics provide better protection than sheer, thin, or loosely woven cloth."
+  },
+  {
+    "question": "How are UV rays measured?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "I don't have enough information in the provided context to determine how UV rays are measured. However, it does mention the classification of UV radiation based on wavelength as UVB (290-320 nm), UVA2 (320-340 nm), and UVA1 (340-400 nm)."
+  },
+  {
+    "question": "Can I still get sun burnt on an over cast day?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Yes, you can still get sunburned on an overcast day. Although the sun's rays are filtered through clouds, they can still cause damage and increase the risk of sunburn. This is especially true if you spend extended periods outdoors on cloudy days."
+  },
+  {
+    "question": "When are sunbeds safe to use?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Unfortunately, the provided context does not include guidelines for safe sunbed use. However, it does mention that sunbeds use harmful UV rays and increase the risk of melanoma skin cancer."
+  },
+  {
+    "question": "Can I tan slowly and still not get skin cancer?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkq9r6-57nCBj-93eab8f53a406d32', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "Does altitude (high or low) make a difference with preventing skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkqAUv-57nCBj-93eab902ae616d32', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "Why is water (sea, lake, river) dangers to protract skin cancers?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Prolonged exposure to water from lakes, rivers, and seas can pose health risks due to the presence of harmful algal blooms, which can cause symptoms such as skin irritation, respiratory issues, and gastrointestinal problems. Additionally, exposure to waterborne pathogens, such as bacteria and viruses, can also lead to various health issues. It is essential to practice proper hygiene and take preventive measures when engaging in water activities."
+  },
+  {
+    "question": "Can you give me a possible insight to a treatment plan for 2b nodular melanoma post WLE?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "For a possible treatment plan for 2b nodular melanoma post WLE, the plan may involve further tests and treatment, such as sentinel lymph node biopsy and removal of lymph nodes if cancer is found. Immunotherapy with pembrolizumab may also be considered, especially if there's a high risk of recurrence. Close follow-up and monitoring are also essential."
+  },
+  {
+    "question": "Will I be assigned a nurse if I am diagnosed with either BCC or SCC?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "I don't have enough information to determine if you will be assigned a nurse after being diagnosed with either BCC or SCC. The provided context is about a systematic review and meta-analysis of mortality rates for BCC and SCC, but it does not mention nurse assignments."
+  },
+  {
+    "question": "What is Melanoma on Insula area of the brain? How is it treated? Is it successful? What are the side affects?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Melanoma on the Insula area of the brain is a rare and aggressive form of cancer. Treatment options may include stereotactic radiosurgery or whole-brain radiation therapy, as well as systemic treatments such as immunotherapy, targeted therapy, or chemotherapy. The success of treatment and potential side effects are not specified in the provided context, but it's recommended to consider clinical trials for newer treatments."
+  },
+  {
+    "question": "How long will I have to wait for my biopsy results?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "You should expect to wait about a week for your biopsy results. The procedure takes only a few minutes and the results are usually available within 7 days. After the biopsy, the area will be covered with adhesive bandages and you can heal in just a few weeks."
+  },
+  {
+    "question": "How aggressive is BCC?   And SCC?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "According to the provided context, basal cell carcinoma (BCC) is generally considered to be a non-aggressive form of skin cancer. In contrast, cutaneous squamous cell carcinoma (SCC) is more aggressive and has a higher risk of mortality."
+  },
+  {
+    "question": "What is a forehead flap for nose and will it scare? How do I protect it.  (Flap is a surgery procedure)",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkqMnE-57nCBj-93eab9f00ac979dc', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "If my stiches burst after biopsy will I need to get them in again?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "If your stitches burst after a biopsy, you may need to get them re-stitched or re-dressed by your doctor to prevent infection and promote proper healing. Your doctor will assess the situation and provide guidance on the best course of action. In some cases, a re-stitching may be necessary, but it depends on the severity of the situation."
+  },
+  {
+    "question": "Do skin grafts always work?  Or do they need to be done a few time?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "Unfortunately, I don't have information on the success rate of skin grafts or the need for multiple attempts. The provided context indicates that no relevant information was found online. I don't know the specifics of skin graft success rates or the frequency of multiple attempts."
+  },
+  {
+    "question": "I have results from biopsy of BCC and on waiting list for 14 months – is this normal, will it get worse, why am I waiting so long?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "I don't have enough information about your specific situation, but generally, waiting times for biopsies and treatments can vary significantly depending on factors like hospital workload, availability of specialists, and healthcare system priorities. A 14-month wait may be considered long in some cases, but it's essential to consult with your doctor to understand the specific circumstances and potential reasons for the delay."
+  },
+  {
+    "question": "What is the best silicone scar gel?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "I don't have enough information to determine the type of silicone scar gel that is highly rated for effectiveness and skin comfort. However, the context suggests that the product \"Silicone Scar Sheets, Silicone Scar Tape (1.6\"x 120\" Roll-3M)\" is reusable and effective for scar removal."
+  },
+  {
+    "question": "What is the best treatment to reduce scaring?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkr2gh-57nCBj-93eabd212cd279e3', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "Do I need a plastic surgeon for Mohs surgery?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Mohs surgery is typically performed by a dermatologist, not a plastic surgeon. Dermatologists specialize in treating skin conditions, including skin cancer, and often have the necessary training and experience to perform Mohs surgery. This is in line with the information provided in the context."
+  },
+  {
+    "question": "How many passes are there during Mohs surgery?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "The typical number of surgical passes used in Mohs surgery is not explicitly stated in the provided context. However, it is mentioned that the process continues until all of the cancer is removed, with the surgeon examining the sides and deep edges of the removed tissue under a microscope after each pass."
+  },
+  {
+    "question": "Why did my skin graft not work?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "The context doesn't provide specific information about what went wrong with your skin graft surgery. However, it does mention that sometimes the transplanted skin doesn't heal well or \"take\" to the surrounding skin, which may require another skin graft."
+  },
+  {
+    "question": "I am pregnant and have melanoma, will it affect my baby?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "According to the provided context, there is no indication that a pregnancy with melanoma will increase the risk of birth defects in the baby. The American Academy of Dermatology states that melanoma can be treated safely during pregnancy. The risks and benefits of treatment options should be discussed with a dermatologist."
+  },
+  {
+    "question": "What is Aldara cream what is it used for and does it work?  What are the side affects.",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve"
+    ],
+    "websearch_used": false,
+    "fallback_detected": true,
+    "final_generation": "Error: Error code: 429 - {'id': 'ntkrYCV-57nCBj-93eabf8e897856de', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 60 RPM (1 QPS) and 60000 TPM (1000 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}"
+  },
+  {
+    "question": "How common is melanoma/skin cancer in the mouth/gums. How is it treated?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": true,
+    "final_generation": "I don't have enough information to provide a reliable answer about the chances of getting skin cancer in the mouth and its typical treatment options."
+  },
+  {
+    "question": "Does radiotherapy work on skin cancer?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "Radiotherapy is a treatment option for basal and squamous cell skin cancers. It may be used in addition to surgery if cancer cells are found at the margin of the sample removed. Radiation therapy can be an effective treatment for skin cancers that are difficult to manage surgically."
+  },
+  {
+    "question": "Am I at a higher risk of skin cancer if I have tattoos?",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "transform_query",
+      "web_search_node",
+      "generate"
+    ],
+    "websearch_used": true,
+    "fallback_detected": false,
+    "final_generation": "Having tattoos may increase the risk of skin cancer, as suggested by a Danish study of twins, with a hazard of skin cancer 1.62 times higher among tattooed individuals. The risk was also found to be higher for tattoos larger than the palm of a hand. The study recommends further research to understand the etiological pathway of tattoo ink-induced carcinogenesis."
+  },
+  {
+    "question": "What is the difference between UVA and UVB",
+    "process_path": [
+      "priorq_retriever",
+      "grade_prior_docs",
+      "retrieve",
+      "grade_documents",
+      "generate"
+    ],
+    "websearch_used": false,
+    "fallback_detected": false,
+    "final_generation": "UVA and UVB are types of ultraviolet radiation that differ in their wavelengths and effects on the skin. UVA penetrates the dermis and causes long-term damage and photoaging, while UVB is largely responsible for sunburn and is mostly absorbed in the epidermis. UVA makes up 95% of terrestrial UV radiation and is constant throughout the day and year."
+  }
+]
