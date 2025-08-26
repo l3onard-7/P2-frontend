@@ -13,7 +13,7 @@ function SunireAIChat() {
    // Check if running in widget mode
    const urlParams = new URLSearchParams(window.location.search);
    const isWidget = urlParams.get('widget') === 'true';
-   const backendUrl = urlParams.get('backend') || import.meta.env.VITE_BACKEND_URL || "https://p2-sand-phi.vercel.app";
+   const backendUrl = urlParams.get('backend') || import.meta.env.VITE_BACKEND_URL || "https://p2-648397338052.europe-west1.run.app";
    const theme = urlParams.get('theme') || 'default';
    const widgetId = urlParams.get('widgetId') || 'default';
 
