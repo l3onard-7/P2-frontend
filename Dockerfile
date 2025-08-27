@@ -12,4 +12,5 @@ RUN npm run build
 
 EXPOSE 8080
 
-CMD ["npm", "run", "serve", "--", "--port", "$PORT", "--host", "0.0.0.0"]
+# Use the correct serve syntax with environment variable
+CMD ["sh", "-c", "npx serve dist -l ${PORT:-8080}"]
