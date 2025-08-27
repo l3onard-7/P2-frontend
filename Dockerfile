@@ -2,14 +2,14 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+COPY package.json ./
 
-RUN yarn install --frozen-lockfile
+RUN npm install
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
 
 EXPOSE 8080
 
-CMD ["yarn", "serve", "--port", "$PORT", "--host", "0.0.0.0", "dist"]
+CMD ["npm", "run", "serve", "--", "--port", "$PORT", "--host", "0.0.0.0"]
