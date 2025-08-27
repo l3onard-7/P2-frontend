@@ -74,9 +74,9 @@ function SunireAIChat() {
          headers: {
             'Content-type': 'application/json; charset=UTF-8',
          },
-         body: JSON.stringify({
-            prompt: {user_prompt}
-         })
+         body: JSON.stringify(
+            user_prompt
+         )
       }
       
       try {
