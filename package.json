@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview --port $PORT",
-    "serve": "serve dist"
+    "serve": "serve dist -l ${PORT:-8080}",
+    "start": "serve dist -l ${PORT:-8080}"
   },
   "dependencies": {
     "react": "^18.3.1",
