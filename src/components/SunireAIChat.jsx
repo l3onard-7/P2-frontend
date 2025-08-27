@@ -60,13 +60,13 @@ function SunireAIChat() {
        }
     };
 
-   const getModelResponse = async (history) => {
-      console.log(history);
-      history = history.map(({role,text}) =>({role,content:{text}}));
+   const getModelResponse = async (userMessage) => {
+      const currentChatHistory = [...chatHistory, {role:"user", text:userMessage}];
+      setChatHistory(currentChatHistory);
+      setChatHistory((prev) =>[...prev, {role:"model", text:"Thinking.." }]);
 
-      const user_messages = history.filter(msg => msg.role !== "model");
-      console.log(user_messages);
-      const mostrecentchat = history[history.length - 1];
+      const historyForBackend = currentChatHistory.map(({role,text}) =>({role,content:{text}}));
+      const mostrecentchat = historyForBackend[historyForBackend.length - 1];
       const user_prompt = mostrecentchat["content"]["text"];   
       
       const requestSever = {
@@ -74,9 +74,9 @@ function SunireAIChat() {
          headers: {
             'Content-type': 'application/json; charset=UTF-8',
          },
-         body: JSON.stringify(
-            user_prompt
-         )
+         body: JSON.stringify({
+            prompt: user_prompt
+         })
       }
       
       try {

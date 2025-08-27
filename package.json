@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview --port $PORT",
     "serve": "serve dist -l ${PORT:-8080}",
-    "start": "serve dist -l ${PORT:-8080}"
+    "start": "serve dist --listen tcp://0.0.0.0:${PORT:-8080}"
   },
   "dependencies": {
     "react": "^18.3.1",

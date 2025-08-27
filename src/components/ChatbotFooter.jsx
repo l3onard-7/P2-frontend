@@ -10,11 +10,7 @@ function ChatBotFooter({setChatHistory , getModelResponse, chatHistory})
       const userMessage = inputRef.current.value.trim();
       if(!userMessage) return;
       inputRef.current.value ="";
-      setChatHistory((history) =>[...history, {role:"user", text:userMessage }]);
-     setTimeout(() => {
-      setChatHistory((history) =>[...history, {role:"model", text:"Thinking.." }]);
-      getModelResponse([...chatHistory, {role:"user", text:userMessage }]);
-   },600) 
+      getModelResponse(userMessage);
    }
    return(
       <>
