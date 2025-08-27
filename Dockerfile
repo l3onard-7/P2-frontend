@@ -12,5 +12,7 @@ RUN npm run build
 
 EXPOSE 8080
 
-# Use the correct serve syntax with environment variable
-CMD ["sh", "-c", "npx serve dist -l ${PORT:-8080}"]
+# Install serve globally and use a more explicit command
+RUN npm install -g serve
+
+CMD ["sh", "-c", "serve -s dist -l tcp://0.0.0.0:${PORT:-8080}"]
