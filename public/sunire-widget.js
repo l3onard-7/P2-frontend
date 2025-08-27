@@ -46,7 +46,7 @@
         // Create iframe to load your React app
         const iframe = document.createElement('iframe');
         iframe.id = 'sunire-chat-iframe';
-        iframe.src = `https://p2-frontend.vercel.app?widget=true&backend=${encodeURIComponent(backendUrl)}&theme=${theme}&widgetId=${widgetId}`;
+        iframe.src = `https://68aee3db513140363f276dba--frontend231.netlify.app?widget=true&backend=${encodeURIComponent(backendUrl)}&theme=${theme}&widgetId=${widgetId}`;
         iframe.style.cssText = `
             width: 100%;
             height: 100%;
@@ -61,7 +61,7 @@
 
         // Handle iframe messages for resizing
         window.addEventListener('message', function(event) {
-            if (event.origin !== 'https://p2-frontend.vercel.app') return;
+            if (event.origin !== 'https://68aee3db513140363f276dba--frontend231.netlify.app') return;
             
             if (event.data.type === 'SUNIRE_WIDGET_RESIZE') {
                 widgetContainer.style.width = event.data.width + 'px';
