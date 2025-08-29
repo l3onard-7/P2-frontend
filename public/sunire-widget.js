@@ -5,7 +5,7 @@
     // Get script tag and extract configuration
     const scriptTag = document.currentScript;
     const widgetId = scriptTag.getAttribute('data-widget-id') || 'default';
-    const backendUrl = scriptTag.getAttribute('data-backend-url') || 'https://p2-648397338052.europe-west1.run.app';
+    const backendUrl = scriptTag.getAttribute('data-backend-url') || 'https://prj1-648397338052.europe-west2.run.app';
     const theme = scriptTag.getAttribute('data-theme') || 'default';
     const position = scriptTag.getAttribute('data-position') || 'bottom-right';
 
