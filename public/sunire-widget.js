@@ -46,7 +46,7 @@
         // Create iframe to load your React app
         const iframe = document.createElement('iframe');
         iframe.id = 'sunire-chat-iframe';
-        iframe.src = `https://68aee3db513140363f276dba--frontend231.netlify.app?widget=true&backend=${encodeURIComponent(backendUrl)}&theme=${theme}&widgetId=${widgetId}`;
+        iframe.src = `https://68f0ccdd8a61bd85b87fdaff--frontend231.netlify.app?widget=true&backend=${encodeURIComponent(backendUrl)}&theme=${theme}&widgetId=${widgetId}`;
         iframe.style.cssText = `
             width: 100%;
             height: 100%;
@@ -98,3 +98,4 @@
     init();
 
 })();
+
