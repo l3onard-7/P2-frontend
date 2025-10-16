@@ -1,11 +1,18 @@
 import React from "react";
-import styles from "../styles/chatbothead.module.css"
+import styles from "../styles/chatbothead.module.css";
 import ChatIcon from "./ChatIcon";
 
 function ChatBotHead({ setShowChatbot }) {
+  // Detect widget mode via URL param or iframe
+  const urlParams = (typeof window !== "undefined") ? new URLSearchParams(window.location.search) : null;
+  const isWidget = Boolean(
+    (urlParams && urlParams.get('widget') === 'true') ||
+    (typeof window !== "undefined" && window.self !== window.top)
+  );
+
   return (
     <div className={styles.chat_header}>
-      {/* keep the close button but absolutely position it so header content can be centered */}
+      {/* Close button */}
       <button
         onClick={() => setShowChatbot(prev => !prev)}
         className={`${styles.close_button} material-symbols-rounded`}
@@ -19,9 +26,12 @@ function ChatBotHead({ setShowChatbot }) {
         <h2>SunireChatBot</h2>
       </div>
 
-      <p className={styles.disclaimer}>
-        the content is for informational and educational purposes not for personalized medical advice.
-      </p>
+      {/* Only show disclaimer if in widget mode */}
+      {isWidget && (
+        <p className={styles.disclaimer}>
+          the content is for informational and educational purposes not for personalized medical advice.
+        </p>
+      )}
     </div>
   );
 }
