@@ -11,7 +11,7 @@ function ChatBotHead({ setShowChatbot }) {
   );
 
   return (
-    <div className={styles.chat_header}>
+    <div className={`${styles.chat_header} ${isWidget ? styles.widget : ""}`}>
       {/* Close button */}
       <button
         onClick={() => setShowChatbot(prev => !prev)}
@@ -21,17 +21,18 @@ function ChatBotHead({ setShowChatbot }) {
         Keyboard_arrow_down
       </button>
 
+      {/* Header info */}
       <div className={styles.header_info}>
         <ChatIcon />
         <h2>SunireChatBot</h2>
       </div>
 
-      {/* Only show disclaimer if in widget mode */}
-      {isWidget && (
-        <p className={styles.disclaimer}>
-          the content is for informational and educational purposes not for personalized medical advice.
-        </p>
-      )}
+      {/* Disclaimer */}
+      <p className={styles.disclaimer}>
+        {isWidget
+          ? "The content is for informational and educational purposes, not personalized medical advice."
+          : "Welcome to SunireChatBot – chat with AI for information and tips."}
+      </p>
     </div>
   );
 }
