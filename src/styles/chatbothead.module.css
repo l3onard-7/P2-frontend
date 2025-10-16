@@ -1,56 +1,67 @@
 .chat_header {
-   display: flex;
-   flex-direction: column;
-   padding: 15px 20px;
-   align-items: center;
-   justify-content: center;
-   background: #874a94;
-   position: relative; /* so the close button can be absolutely positioned */
-   text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  background: #874a94;
+  position: relative; /* so the close button can be absolutely positioned */
+  text-align: center;
+  border-radius: 8px 8px 0 0; /* optional rounded top corners */
 }
 
 .header_info {
-   display: flex;
-   gap: 10px;
-   padding: 8px 0;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .header_info svg {
-   height: 35px;
-   width: 35px;
-   padding: 6px;
-   fill: #874a94;
-   background: #fff;
-   border-radius: 50%;
-   flex-shrink: 0;
+  height: 35px;
+  width: 35px;
+  padding: 6px;
+  fill: #874a94;
+  background: #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .header_info h2 {
-   font-size: 1.31rem;
-   font-weight: 600;
-   color: whitesmoke;
-   margin: 0;
+  font-size: 1.31rem;
+  font-weight: 600;
+  color: whitesmoke;
+  margin: 0;
 }
 
 /* place close button at the top-right so header remains centered */
 .close_button {
-   color: whitesmoke;
-   background: transparent;
-   border: none;
-   cursor: pointer;
-   position: absolute;
-   top: 8px;
-   right: 8px;
-   font-size: 1.6rem;
-   line-height: 1;
+  color: whitesmoke;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 1.6rem;
+  line-height: 1;
 }
 
 /* small disclaimer text centered under the header */
 .disclaimer {
-   margin: 6px 12px 0;
-   font-size: 0.75rem;
-   color: rgba(255, 255, 255, 0.95);
-   max-width: 260px;
+  margin: 6px 12px 0;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 260px;
+}
+
+/* Optional adjustments for widget mode */
+.widget {
+  padding: 10px 15px;
+}
+
+.widget .disclaimer {
+  font-size: 0.65rem;
+  max-width: 200px;
 }
