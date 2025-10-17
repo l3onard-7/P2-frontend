@@ -8,13 +8,13 @@
   position: relative;
   text-align: center;
   border-radius: 8px 8px 0 0;
-  gap: 8px;
+  gap: 10px;
 }
 
 .header_info {
   display: flex;
   gap: 10px;
-  padding: 8px 0;
+  padding: 0;
   align-items: center;
   justify-content: center;
 }
@@ -51,28 +51,39 @@
   height: 30px;
 }
 
+/* Disclaimer Container */
+.disclaimer_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Disclaimer Text */
 .disclaimer {
   margin: 0;
   padding: 8px 12px;
-  font-size: 0.7rem;
-  line-height: 1.3;
+  font-size: 0.75rem;
+  line-height: 1.35;
   color: #ffffff;
-  max-width: 280px;
   text-align: center;
   font-weight: 400;
   word-wrap: break-word;
   white-space: normal;
+  max-width: 100%;
   display: block;
-  visibility: visible !important;
-  opacity: 1 !important;
+  flex-shrink: 0;
 }
 
+/* Widget mode adjustments */
 .widget {
   padding: 12px 16px;
+  gap: 12px;
 }
 
 .widget .disclaimer {
-  font-size: 0.65rem;
-  max-width: 240px;
-  padding: 8px 10px;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  padding: 6px 10px;
 }
