@@ -10,6 +10,8 @@ function ChatBotHead({ setShowChatbot }) {
     (typeof window !== "undefined" && window.self !== window.top)
   );
 
+  const disclaimerText = "This chatbot is an AI-powered virtual assistant designed to provide general health information and support. It does not provide medical advice, diagnose conditions, or replace consultation with a qualified healthcare professional.";
+
   return (
     <div className={`${styles.chat_header} ${isWidget ? styles.widget : ""}`}>
       {/* Close button */}
@@ -27,10 +29,12 @@ function ChatBotHead({ setShowChatbot }) {
         <h2>SunireChatBot</h2>
       </div>
 
-      {/* Disclaimer */}
-      <p className={styles.disclaimer}>
-        This chatbot is an AI-powered virtual assistant designed to provide general health information and support. It does not provide medical advice, diagnose conditions, or replace consultation with a qualified healthcare professional.
-      </p>
+      {/* Disclaimer - Explicit rendering */}
+      <div className={styles.disclaimer_container}>
+        <p className={styles.disclaimer}>
+          {disclaimerText}
+        </p>
+      </div>
     </div>
   );
 }
