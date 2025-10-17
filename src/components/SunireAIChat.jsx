@@ -34,7 +34,7 @@ function SunireAIChat() {
                window.parent.postMessage({
                   type: 'SUNIRE_WIDGET_RESIZE',
                   width: showChatbot ? 400 : 60,
-                  height: showChatbot ? 650 : 60 // Increased from 600 to 650 to fit disclaimer + footer
+                  height: showChatbot ? 700 : 60 // Increased to 700px to fit all content including footer
                }, '*');
             }
          };
