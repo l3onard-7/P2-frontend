@@ -10,7 +10,7 @@ function ChatBotHead({ setShowChatbot }) {
     (typeof window !== "undefined" && window.self !== window.top)
   );
 
-  const disclaimerText = "This chatbot is an AI-powered virtual assistant designed to provide general health information and support. It does not provide medical advice, diagnose conditions, or replace consultation with a qualified healthcare professional.";
+  const disclaimerText = "This chatbot is an AI-powered assistant designed to provide general health information and support. It does not replace consultation with a qualified healthcare professional.";
 
   return (
     <div className={`${styles.chat_header} ${isWidget ? styles.widget : ""}`}>
