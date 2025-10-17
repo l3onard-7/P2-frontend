@@ -40,7 +40,7 @@
             ${positionStyles[position] || positionStyles['bottom-right']}
             z-index: 999999;
             width: 400px;
-            height: 600px;
+            height: 700px;
             max-width: 90vw;
             max-height: 90vh;
             border: none;
