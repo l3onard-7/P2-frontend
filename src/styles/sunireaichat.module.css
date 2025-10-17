@@ -1,5 +1,8 @@
 .chatbot_popup{
    width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
    overflow: hidden;
    background-color: #fff;
    border-radius: 20px;
@@ -9,25 +12,28 @@
    opacity: 1;
    pointer-events: auto;
 }
+
 .showpop_up
 {
    opacity: 0;
    pointer-events: none;
    transform: scale(0.1);
    transition: all 0.3s ease;
-   transform-origin: bottom right, opacity 0.3s ease;
+   transform-origin: bottom right;
    overflow: hidden;
 }
+
 .container
 {
    width: auto;
    min-height: 100vh;
    background: linear-gradient(rgb(187, 225, 211),#2f0138);
 }
+
 .chat_container
 {
    position: fixed;
-   right:  2rem;
+   right: 2rem;
    bottom: 2rem;
    z-index: 1000;
    display: flex;
@@ -36,14 +42,11 @@
    width: 420px;
    max-width: 520px;
    gap: 1rem;
-   
-   
 }
+
 .chat_toggler 
 {
-  
    display: flex;
-   bottom: 30px;
    height: 50px;
    width: 50px;
    cursor: pointer;
@@ -53,12 +56,12 @@
    justify-content: center;
    align-items: center;
    transition: all 0.2s ease;
-
+   flex-shrink: 0;
 }
+
 .chat_toggler span
 {
    color: #fff;
-   
 }
 
 @media (max-width:520px) {
@@ -73,19 +76,16 @@
       flex-direction: column;
       align-items: flex-end;
       justify-content: flex-end;
-      
    }
+
    .showpop_up, .chatbot_popup
    {
       width: 100%;
       height: 100%;
       border-radius: 0;  
    }
+
    .chat_toggler#mini{
       display: none;
    }
-   
-  
 }
-
-
