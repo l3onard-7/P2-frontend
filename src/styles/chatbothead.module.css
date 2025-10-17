@@ -48,12 +48,15 @@
   line-height: 1;
 }
 
-/* small disclaimer text centered under the header */
+/* Disclaimer text styling */
 .disclaimer {
-  margin: 6px 12px 0;
+  margin: 12px 0 0;
+  padding: 10px 12px;
   font-size: 0.75rem;
+  line-height: 1.4;
   color: rgba(255, 255, 255, 0.95);
-  max-width: 260px;
+  max-width: 280px;
+  text-align: center;
 }
 
 /* Optional adjustments for widget mode */
@@ -62,6 +65,7 @@
 }
 
 .widget .disclaimer {
-  font-size: 0.65rem;
-  max-width: 200px;
+  font-size: 0.7rem;
+  max-width: 250px;
+  padding: 8px 10px;
 }
