@@ -29,9 +29,7 @@ function ChatBotHead({ setShowChatbot }) {
 
       {/* Disclaimer */}
       <p className={styles.disclaimer}>
-        {isWidget
-          ? "The content is for informational and educational purposes, not personalized medical advice."
-          : "Welcome to SunireChatBot – chat with AI for information and tips."}
+        This chatbot is an AI-powered virtual assistant designed to provide general health information and support. It does not provide medical advice, diagnose conditions, or replace consultation with a qualified healthcare professional.
       </p>
     </div>
   );
