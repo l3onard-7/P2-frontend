@@ -71,7 +71,7 @@
             // Accept messages from any netlify.app domain (for widget resizing)
             if (event.data.type === 'SUNIRE_WIDGET_RESIZE') {
                 widgetContainer.style.width = event.data.width + 'px';
-                widgetContainer.style.height = Math.max(event.data.height, 650) + 'px'; // Minimum 650px to fit all content
+                widgetContainer.style.height = Math.max(event.data.height, 700) + 'px'; // Minimum 700px to fit all content
             }
         });
 
